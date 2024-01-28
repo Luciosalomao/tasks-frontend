@@ -40,7 +40,7 @@ public class TasksController {
 	
 	@GetMapping("add")
 	public String add(Model model) {
-		model.addAttribute("todo", new Todo());
+		model.addAttribute("/tasks-backend/todo", new Todo());
 		return "add";
 	}
 
